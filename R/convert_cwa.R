@@ -1,7 +1,7 @@
 get_hdr = function(file, verbose = TRUE) {
   hdr = NULL
-  if (requireNamespace("GGIR", quietly = TRUE)) {
-    hdr = GGIR::g.cwaread(file, start = 0, end = 10, progressBar = verbose,
+  if (requireNamespace("GGIRread", quietly = TRUE)) {
+    hdr = GGIRread::readAxivity(file, start = 0, end = 10, progressBar = verbose,
                           desiredtz = "UTC")
     hdr = hdr$header
   }

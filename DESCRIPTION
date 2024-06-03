@@ -1,7 +1,7 @@
 Package: read.cwa
 Type: Package
 Title: Convert 'Axivity' 'CWA' Files
-Version: 0.2.1
+Version: 0.2.2
 Authors@R: 
     c(person(given = "John",
              family = "Muschelli",
@@ -20,13 +20,14 @@ LazyData: true
 Imports: 
     R.utils,
     readr
-RoxygenNote: 7.1.1
 Suggests: 
     knitr,
     rmarkdown,
     testthat (>= 2.1.0),
-    GGIR
+    GGIRread (>= 1.0.1)
 VignetteBuilder: knitr
+Remotes:
+  wadpac/GGIRread
 URL: https://github.com/muschellij2/read.cwa
 BugReports: https://github.com/muschellij2/read.cwa/issues
 Depends: 
